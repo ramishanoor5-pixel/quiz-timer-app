@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Timer App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Timer</h1>
+
+    <!-- Preset Buttons -->
+    <div class="presets">
+      <button class="preset-btn" data-seconds="30">30s</button>
+      <button class="preset-btn" data-seconds="60">1 min</button>
+      <button class="preset-btn" data-seconds="300">5 min</button>
+    </div>
+
+    <!-- Custom Time Input -->
+    <div class="custom-time">
+      <input type="number" id="customMinutes" placeholder="Min" min="0" max="59" />
+      <span>:</span>
+      <input type="number" id="customSeconds" placeholder="Sec" min="0" max="59" />
+      <button id="setCustomBtn">Set</button>
+    </div>
+
+    <!-- Timer Display -->
+    <div class="timer-display" id="timerDisplay">00:30</div>
+
+    <!-- Status -->
+    <div class="status" id="status">Ready</div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="startPauseBtn" class="btn primary">Start</button>
+      <button id="resetBtn" class="btn secondary">Reset</button>
+    </div>
+
+    <p class="hint">Space = Start/Pause &nbsp;|&nbsp; R = Reset</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
